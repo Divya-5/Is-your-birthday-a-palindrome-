@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #111827;
+  --grey-color: #9ca3af;
+  --background-blue: rgb(188, 239, 253);
+  --background-greyish: #1e3a8a;
+  --white-color: white;
+}
+main {
+  background-color: var(--background-blue);
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  margin: 0;
+}
+#show-btn {
+  margin-top: 20px;
+  background-color: var(--background-greyish);
+  border: none;
+  color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+}
+.footer {
+  background-color: var(--grey-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--primary-color);
+  border-top-right-radius: 1rem;
+}
+
+.footer .link {
+  color: var(--primary-color);
+  font-size: 16px;
+  padding: 0;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.icons {
+  width: 20px;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+@media screen and (min-width: 767px) {
+  .footer ul {
+    justify-content: flex-end;
+  }
+}
